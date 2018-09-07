@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List</title>
+    <style>
+    body {
+        text-align : center;
+    }
+    
+    table {
+        text-align : center;
+        margin : auto;
+    }
+    </style>
+</head>
+<body>
+    <h3>Todo List</h3>
+    <h3 id="summary"></h3>
+    <input type="text" id="search-filter" placeholder="Search Filter">
+    <button id="remove-all">Clear All</button>
+    <div id="add-here">
+        <br><br>
+        <table border="1"><thead>
+            <th>Status</th>
+            <th >Title of item | Description | Priority of item</th>
+            <th>Created on</th>
+            <th>Remove</th>
+            <tbody id="add-here-body">
+
+            </tbody>
+        </thead></table>
+    </div>
+    
+    <div id="add-item">
+
+        <h4>Add Item to the List</h4>
+        
+        <form action="" method="GET">
+      <input type="text" name="" placeholder="Title" id="todo-title">
+      <input type="text" name="" placeholder="Description" id="todo-desc">
+      <select name="" id="todo-priority">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button id="add-button" type="submit">Add</button>
+      </form>
+      
+    </div>
+    <script src="moment.js"></script>
+    <script src="uuid.js"></script>
+    <script src='javascript.js'></script>
+</body>
+</html>
